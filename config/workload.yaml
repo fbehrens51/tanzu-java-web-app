@@ -14,6 +14,12 @@ spec:
         value: "11"
       - name: BP_MAVEN_BUILD_ARGUMENTS
         value: "-e -X -Dmaven.test.skip=true --no-transfer-progress package"
+      - name: MVNW_REPOURL
+        value: "https://nexus.poc.tws-tap.tws-dark.cf-app.com:8081/repository/maven-central-cache"
+      - name: MVNW_USERNAME
+        value: "tap"
+      - name: MVNW_PASSWORD
+        value: "ChangeMe2day!"
   params:
   - name: annotations
     value:
@@ -27,5 +33,3 @@ spec:
       url: https://github.com/fbehrens51/tanzu-java-web-app.git
       ref:
         branch: poc
-
-
